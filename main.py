@@ -5,10 +5,9 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import shutil
-from datetime import datetime, timedelta
-from .preprocess import preprocess_image
-from .gradcam_codes import generate_gradcam
-from .config import class_names 
+from preprocess import preprocess_image
+from gradcam_codes import generate_gradcam
+from config import class_names 
 
 
 # FastAPI App Initialization

@@ -6,8 +6,8 @@ import base64
 from PIL import Image
 import matplotlib.cm as cm
 from tensorflow.keras.models import Model
-from .model_utils import get_model
-from .config import class_names
+from model_utils import get_model
+from config import class_names
 
 
 
