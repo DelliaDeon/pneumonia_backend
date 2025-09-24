@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-from project_codes.codes.config import img_size
+from config import img_size
 
 def preprocess_image(img_path):
   img = Image.open(img_path).resize(img_size)

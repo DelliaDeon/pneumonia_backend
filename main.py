@@ -5,11 +5,10 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import shutil
-from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
-from project_codes.codes.preprocess import preprocess_image
-from project_codes.codes.gradcam_codes import generate_gradcam
-from project_codes.codes.config import class_names 
+from preprocess import preprocess_image
+from gradcam_codes import generate_gradcam
+from config import class_names 
 
 
 # FastAPI App Initialization
